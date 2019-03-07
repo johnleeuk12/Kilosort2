@@ -1599,8 +1599,8 @@ classdef ksGUI < handle
             % look for a default ops file and load it
 %             if exist('defaultOps.mat')
 %                 load('defaultOps.mat', 'ops');
-            if exist('configFile384.m', 'file')
-                configFile384;  
+            if exist('Harris_config2.m', 'file')
+                Harris_config2;  
                 ops.trange      = [0 Inf];
             else
                 ops = [];

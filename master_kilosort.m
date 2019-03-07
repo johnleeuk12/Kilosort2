@@ -1,9 +1,9 @@
 %% you need to change most of the paths in this block
 
-addpath(genpath('D:\GitHub\KiloSort2')) % path to kilosort folder
-addpath('D:\GitHub\npy-matlab')
+addpath(genpath('C:\Users\Seth\Documents\GitHub\KiloSort2')) % path to kilosort folder
+addpath('C:\Users\Seth\Documents\GitHub\npy-matlab')
 
-pathToYourConfigFile = 'D:\GitHub\KiloSort2\configFiles'; % take from Github folder and put it somewhere else (together with the master_file)
+pathToYourConfigFile = 'C:\Users\Seth\Documents\GitHub\KiloSort2\configFiles'; % take from Github folder and put it somewhere else (together with the master_file)
 run(fullfile(pathToYourConfigFile, 'configFile384.m'))
 rootH = 'H:\';
 ops.fproc       = fullfile(rootH, 'temp_wh.dat'); % proc file on a fast SSD

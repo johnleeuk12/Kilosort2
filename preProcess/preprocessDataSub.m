@@ -6,6 +6,10 @@ ops.nt0min  = getOr(ops, 'nt0min', ceil(20 * ops.nt0/61));
 NT       = ops.NT ;
 NchanTOT = ops.NchanTOT;
 
+if strcmp(ops.datatype , 'openEphys')
+ops.fbinary = fullfile(ops.root, ops.fbinary);
+end
+
 d = dir(ops.fbinary);
 nTimepoints = floor(d.bytes/NchanTOT/2);
 ops.tstart = ceil(ops.trange(1) * ops.fs); 
